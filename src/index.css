@@ -1,0 +1,16 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+	--color-primary: #f42c37;
+	--color-secondary: #f42c37;
+	--color-brand-yellow: #fdc62e;
+	--color-brand-green: #2dcc6f;
+	--color-brand-blue: #1376f4;
+	--color-brand-white: #eeeeee;
+}
+
+@utility container {
+	@apply w-full mx-auto px-4 sm:px-12
+}
