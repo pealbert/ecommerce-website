@@ -11,6 +11,48 @@
 	--color-brand-white: #eeeeee;
 }
 
+@layer base {
+	* {
+		-webkit-tap-highlight-color: transparent;
+	}
+
+	html {
+		-webkit-text-size-adjust: 100%;
+		text-size-adjust: 100%;
+
+		@apply scroll-smooth;
+
+		&::-webkit-scrollbar {
+			@apply hidden;
+		}
+	}
+
+	body {
+		font-feature-settings:
+			"rlig" 1,
+			"calt" 1;
+	}
+
+	::selection {
+		@apply bg-primary text-brand-white;
+	}
+
+	:focus:not(:focus-visible) {
+		@apply outline-none;
+	}
+
+	:focus-visible {
+		outline: 2px solid currentColor;
+		outline-offset: 2px;
+	}
+}
+
+@layer components {
+	.search-bar {
+		@apply w-0 group-hover:w-75 transition-all duration-300 rounded-full group-hover:border group-hover:border-gray-500 px-3 py-1 focus:outline-none dark:border-gray-800 dark:bg-gray-900 group-hover:dark:bg-gray-800;
+	}
+}
+
 @utility container {
 	@apply w-full mx-auto px-4 sm:px-12
 }
