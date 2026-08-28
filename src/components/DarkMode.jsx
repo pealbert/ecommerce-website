@@ -1,12 +1,19 @@
-import LightButton from "@/assets/website/light-mode-button.png";
-import DarkButton from "@/assets/website/dark-mode-button.png";
 import { useEffect, useState } from "react";
+import DarkButton from "@/assets/website/dark-mode-button.png";
+import LightButton from "@/assets/website/light-mode-button.png";
+import { cn } from "@/lib/utils";
 
 export const DarkMode = () => {
-	const [theme, setTheme] = useState(localStorage.getItem("theme") ? localStorage.getItem("theme") : "light");
+	const [theme, setTheme] = useState(
+		localStorage.getItem("theme") ? localStorage.getItem("theme") : "light",
+	);
+
+	const toggleTheme = () => {
+		setTheme((currentTheme) => (currentTheme === "dark" ? "light" : "dark"));
+	};
 
 	const element = document.documentElement; // access to html element
-	
+
 	// set theme to localStorage and html element
 	useEffect(() => {
 		localStorage.setItem("theme", theme);
@@ -18,9 +25,28 @@ export const DarkMode = () => {
 	});
 
 	return (
-		<div className="relative">
-			<img onClick={() => setTheme(theme === "dark" ? "light" : "dark")} src={LightButton} alt="" className={`w-12 cursor-pointer absolute right-0 z-10  ${theme === "dark" ? "opacity-0" : "opacity-100"} transition-all duration-300`} />
-			<img onClick={() => setTheme(theme === "dark" ? "light" : "dark")} src={DarkButton} alt="" className={`w-12 cursor-pointer transition-all duration-300`} />
-		</div>
+		<button
+			type="button"
+			className="relative"
+			onClick={toggleTheme}
+			aria-label={`Switch to ${theme === "dark" ? "light" : "dark"} mode`}
+		>
+			<img
+				src={LightButton}
+				alt=""
+				className={cn(
+					"absolute right-0 z-10 w-12 cursor-pointer transition-all duration-300",
+					theme === "dark" ? "opacity-0" : "opacity-100",
+				)}
+			/>
+			<img
+				src={DarkButton}
+				alt=""
+				className={cn(
+					"w-12 cursor-pointer transition-all duration-300",
+					theme === "dark" ? "opacity-100" : "opacity-0",
+				)}
+			/>
+		</button>
 	);
-}
+};

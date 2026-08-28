@@ -53,6 +53,12 @@
 	}
 }
 
+@layer utilities {
+	.hero-bg-color {
+		@apply bg-linear-to-r from-gray-300/80 to-gray-100 dark:from-gray-900 dark:to-gray-800 dark:text-white;
+	}
+}
+
 @utility container {
-	@apply w-full mx-auto px-4 sm:px-12
+	@apply w-full mx-auto px-4 sm:px-12;
 }

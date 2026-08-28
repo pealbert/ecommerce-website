@@ -12,15 +12,20 @@
 		"check": "biome check",
 		"lint:write": "biome lint --write",
 		"format:write": "biome format --write",
-		"check:write": "biome check --write"
+		"check:write": "biome check --write --unsafe"
 	},
 	"dependencies": {
 		"@tailwindcss/vite": "^4.3.3",
+		"class-variance-authority": "^0.7.1",
+		"clsx": "^2.1.1",
 		"path": "^0.12.7",
 		"react": "^19.2.8",
 		"react-dom": "^19.2.8",
 		"react-icons": "^5.7.0",
 		"react-router-dom": "^7.18.2",
+		"react-slick": "^0.31.0",
+		"slick-carousel": "^1.8.1",
+		"tailwind-merge": "^3.6.0",
 		"tailwindcss": "^4.3.3"
 	},
 	"devDependencies": {

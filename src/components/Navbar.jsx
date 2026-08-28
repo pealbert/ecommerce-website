@@ -1,7 +1,7 @@
+import { FaCaretDown } from "react-icons/fa";
 import { FaCartShopping } from "react-icons/fa6";
 import { IoMdSearch } from "react-icons/io";
 import { DarkMode } from "./DarkMode";
-import { FaCaretDown } from "react-icons/fa";
 
 const MenuLinks = [
 	{
@@ -24,7 +24,7 @@ const MenuLinks = [
 		name: "Blogs",
 		href: "#blog",
 	},
-]
+];
 
 const DropdownLinks = [
 	{
@@ -42,45 +42,61 @@ const DropdownLinks = [
 		name: "Top Rated",
 		href: "#",
 	},
-]
+];
 
 export const Navbar = () => {
 	return (
-		<div className="bg-white dark:bg-gray-900 dark:text-white duration-200 relative z-40">
+		<div className="relative z-40 bg-white duration-200 dark:bg-gray-900 dark:text-white">
 			<div className="py-4">
-				<div className="container flex justify-between items-center">
+				<div className="container flex items-center justify-between">
 					{/* Logo and Links section */}
 					<div className="flex items-center gap-4">
-						<a href="#" className="text-primary font-semibold tracking-widest text-2xl uppercase sm:text-3xl">Eshop</a>
+						<a
+							href="/"
+							className="font-semibold text-2xl text-primary uppercase tracking-widest sm:text-3xl"
+						>
+							Eshop
+						</a>
 
 						{/* Menu Items */}
 						<div className="hidden lg:block">
 							<ul className="flex items-center gap-4">
 								{MenuLinks.map((link) => (
 									<li key={link.id}>
-										<a href={link.href} className="inline-block px-4 font-semibold text-gray-500 hover:text-black dark:hover:text-white duration-200">{link.name}</a>
+										<a
+											href={link.href}
+											className="inline-block px-4 font-semibold text-gray-500 duration-200 hover:text-black dark:hover:text-white"
+										>
+											{link.name}
+										</a>
 									</li>
 								))}
 
 								{/* Dropdown */}
-								<li className="relative cursor-pointer group">
-									<a href="#" className="flex items-center gap-0.5 font-semibold text-gray-500 dark:hover:text-white py-2">
+								<li className="group relative cursor-pointer">
+									<button
+										type="button"
+										className="flex items-center gap-0.5 py-2 font-semibold text-gray-500 dark:hover:text-white"
+									>
 										Quick Links
 										<span>
-											<FaCaretDown className="group-hover:rotate-180 duration-300" />
+											<FaCaretDown className="duration-300 group-hover:rotate-180" />
 										</span>
-									</a>
+									</button>
 
 									{/* Dropdown Links */}
-									<div className="absolute z-50 hidden group-hover:block w-50 rounded-md bg-white shadow-md dark:bg-gray-900 p-2 dark:text-white ">
+									<div className="absolute z-50 hidden w-50 rounded-md bg-white p-2 shadow-md group-hover:block dark:bg-gray-900 dark:text-white">
 										<ul className="space-y-2">
-											{
-												DropdownLinks.map((link) => (
-													<li key={link.id}>
-														<a href={link.href} className="text-gray-500 dark:hover:text-white duration-200 inline-block w-full p-2 hover:bg-primary/20 rounded-md font-semibold">{link.name}</a>
-													</li>
-												))
-											}
+											{DropdownLinks.map((link) => (
+												<li key={link.id}>
+													<a
+														href={link.href}
+														className="inline-block w-full rounded-md p-2 font-semibold text-gray-500 duration-200 hover:bg-primary/20 dark:hover:text-white"
+													>
+														{link.name}
+													</a>
+												</li>
+											))}
 										</ul>
 									</div>
 								</li>
@@ -89,17 +105,19 @@ export const Navbar = () => {
 					</div>
 
 					{/* Navbar Right section */}
-					<div className="flex justify-between items-center gap-4">
+					<div className="flex items-center justify-between gap-4">
 						{/* Search Bar section */}
-						<div className="relative group hidden sm:block">
+						<div className="group relative hidden sm:block">
 							<input type="text" placeholder="Search" className="search-bar" />
-							<IoMdSearch className="text-xl text-gray-600 group-hover:text-primary dark:text-gray-400 absolute top-1/2 -translate-y-1/2 right-3 duration-200" />
+							<IoMdSearch className="absolute top-1/2 right-3 -translate-y-1/2 text-gray-600 text-xl duration-200 group-hover:text-primary dark:text-gray-400" />
 						</div>
 
 						{/* Order-button section */}
 						<button type="button" className="relative p-3">
-							<FaCartShopping className="text-xl text-gray-600 dark:text-gray-400" />
-							<div className="size-4 bg-red-500 text-white rounded-full absolute top-0 right-0 flex items-center justify-center text-xs">4</div>
+							<FaCartShopping className="text-gray-600 text-xl dark:text-gray-400" />
+							<div className="absolute top-0 right-0 flex size-4 items-center justify-center rounded-full bg-red-500 text-white text-xs">
+								4
+							</div>
 						</button>
 
 						{/* Dark Mode section */}
@@ -111,4 +129,4 @@ export const Navbar = () => {
 			</div>
 		</div>
 	);
-}
+};
