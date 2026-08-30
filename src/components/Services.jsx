@@ -27,7 +27,7 @@ const ServicesInfo = [
 	{
 		id: 4,
 		icon: <FaHeadphonesAlt className="text-4xl text-primary md:text-5xl" />,
-		title: "Online Support 24/7",
+		title: "Online Support",
 		description: "Technical Support 24/7",
 	},
 ];
