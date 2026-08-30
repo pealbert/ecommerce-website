@@ -14,7 +14,7 @@ export const Category2 = () => {
 							<div className="mb-4 space-y-2">
 								<p className="mb-0.5 text-white">Enjoy</p>
 								<p className="mb-0.5 font-semibold text-2xl">With</p>
-								<p className="mb-2 font-bold text-4xl opacity-40 xl:text-5xl">
+								<p className="mb-4 font-bold text-4xl opacity-40 xl:text-5xl">
 									CONSOLE
 								</p>
 								<Button
@@ -37,7 +37,7 @@ export const Category2 = () => {
 							<div className="mb-4">
 								<p className="mb-0.5 text-white">Enjoy</p>
 								<p className="mb-0.5 font-semibold text-2xl">With</p>
-								<p className="mb-2 font-bold text-4xl opacity-20 xl:text-5xl">
+								<p className="mb-4 font-bold text-4xl opacity-20 xl:text-5xl">
 									Oculus
 								</p>
 								<Button
@@ -56,7 +56,7 @@ export const Category2 = () => {
 							<div className="mb-4">
 								<p className="mb-0.5 text-white">Enjoy</p>
 								<p className="mb-0.5 font-semibold text-2xl">With</p>
-								<p className="mb-2 font-bold text-4xl opacity-40 xl:text-5xl">
+								<p className="mb-4 font-bold text-4xl opacity-40 xl:text-5xl">
 									Speakers
 								</p>
 								<Button
