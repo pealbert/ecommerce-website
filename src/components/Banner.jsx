@@ -3,7 +3,7 @@ import { Button } from "./Button";
 
 export const Banner = ({ banner }) => {
 	return (
-		<div className="flex min-h-100 items-center justify-center">
+		<div className="flex min-h-110 items-center justify-center">
 			<div className="container">
 				<div
 					className={cn(

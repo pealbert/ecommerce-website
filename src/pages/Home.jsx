@@ -1,4 +1,5 @@
 import headphone from "@/assets/hero/headphone.png";
+import smartwatch from "@/assets/category/smartwatch2-removebg-preview.png";
 import { Banner } from "@/components/Banner";
 import { Category } from "@/components/Category";
 import { Category2 } from "@/components/Category2";
@@ -20,6 +21,18 @@ const Banners = [
 		bgColor: "bg-primary",
 		buttonTextColor: "text-primary",
 	},
+	{
+		discount: "30% OFF",
+		title: "Happy Hours",
+		date: "14 Jan to 28 Jan",
+		image: smartwatch,
+		product: "Smart Solo",
+		subtitle: "Winter Sale",
+		description:
+			"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi, quod.",
+		bgColor: "bg-brand-green",
+		buttonTextColor: "text-brand-green",
+	},
 ];
 
 export const Home = () => {
@@ -28,10 +41,10 @@ export const Home = () => {
 			<Navbar />
 			<Hero />
 			<Category />
-			<Category2 />
 			<Services />
 			<Banner banner={{ ...Banners[0] }} />
 			<Products />
+			<Banner banner={{ ...Banners[1] }} />
 		</div>
 	);
 };

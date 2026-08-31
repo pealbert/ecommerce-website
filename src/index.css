@@ -34,7 +34,7 @@
 	}
 
 	::selection {
-		@apply bg-primary text-brand-white;
+		@apply bg-brand-blue text-brand-white;
 	}
 
 	:focus:not(:focus-visible) {
