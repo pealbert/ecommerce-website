@@ -26,26 +26,26 @@ export const DarkMode = () => {
 
 	return (
 		<button
-			type="button"
+			aria-label={`Switch to ${theme === "dark" ? "light" : "dark"} mode`}
 			className="relative"
 			onClick={toggleTheme}
-			aria-label={`Switch to ${theme === "dark" ? "light" : "dark"} mode`}
+			type="button"
 		>
 			<img
-				src={LightButton}
 				alt=""
 				className={cn(
 					"absolute right-0 z-10 w-12 cursor-pointer transition-all duration-300",
 					theme === "dark" ? "opacity-0" : "opacity-100",
 				)}
+				src={LightButton}
 			/>
 			<img
-				src={DarkButton}
 				alt=""
 				className={cn(
 					"w-12 cursor-pointer transition-all duration-300",
 					theme === "dark" ? "opacity-100" : "opacity-0",
 				)}
+				src={DarkButton}
 			/>
 		</button>
 	);

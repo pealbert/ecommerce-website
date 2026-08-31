@@ -39,8 +39,8 @@ export const Services = () => {
 				<div className="grid grid-cols-2 gap-x-4 gap-y-8 lg:grid-cols-4">
 					{ServicesInfo.map((service) => (
 						<div
-							key={service.id}
 							className="flex flex-col items-start gap-4 sm:flex-row"
+							key={service.id}
 						>
 							{service.icon}
 							<div>

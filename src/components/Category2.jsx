@@ -18,16 +18,16 @@ export const Category2 = () => {
 									CONSOLE
 								</p>
 								<Button
-									text="Browse"
 									bgColor="bg-primary"
+									text="Browse"
 									textColor="text-white"
 								/>
 							</div>
 						</div>
 						<img
-							src={Image1}
 							alt=""
 							className="absolute top-1/2 right-0 w-62.5 -translate-y-1/2"
+							src={Image1}
 						/>
 					</div>
 
@@ -41,13 +41,13 @@ export const Category2 = () => {
 									Oculus
 								</p>
 								<Button
-									text="Browse"
 									bgColor="bg-white"
+									text="Browse"
 									textColor="text-brand-green"
 								/>
 							</div>
 						</div>
-						<img src={Image2} alt="" className="absolute bottom-0 w-80" />
+						<img alt="" className="absolute bottom-0 w-80" src={Image2} />
 					</div>
 
 					{/* third col */}
@@ -60,16 +60,16 @@ export const Category2 = () => {
 									Speakers
 								</p>
 								<Button
-									text="Browse"
 									bgColor="bg-white"
+									text="Browse"
 									textColor="text-brand-blue"
 								/>
 							</div>
 						</div>
 						<img
-							src={Image3}
 							alt=""
 							className="absolute right-0 bottom-0 w-50"
+							src={Image3}
 						/>
 					</div>
 				</div>

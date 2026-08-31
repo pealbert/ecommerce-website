@@ -3,7 +3,7 @@ import { Button } from "./Button";
 
 export const Banner = ({ banner }) => {
 	return (
-		<div className="flex min-h-100 items-center justify-center py-0">
+		<div className="flex min-h-100 items-center justify-center">
 			<div className="container">
 				<div
 					className={cn(
@@ -23,25 +23,23 @@ export const Banner = ({ banner }) => {
 					{/* second col */}
 					<div className="flex h-full items-center">
 						<img
-							src={banner.image}
 							alt=""
 							className="mx-auto w-62.5 scale-125 object-cover drop-shadow-2xl md:w-85"
+							src={banner.image}
 						/>
 					</div>
 
 					{/* third col */}
 					<div className="flex flex-col items-start justify-center gap-4 p-6 sm:p-8">
 						<p className="font-bold text-xl">{banner.product}</p>
-						<p className="font-bold text-3xl sm:text-5xl">
-							{banner.subtitle}
-						</p>
+						<p className="font-bold text-3xl sm:text-5xl">{banner.subtitle}</p>
 						<p className="text-sm leading-5 tracking-wide">
 							{banner.description}
 						</p>
 
 						<Button
-							text="Shop"
 							bgColor="bg-white"
+							text="Shop"
 							textColor={banner.buttonTextColor}
 						/>
 					</div>

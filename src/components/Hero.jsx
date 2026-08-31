@@ -65,8 +65,8 @@ export const Hero = () => {
 										</h1>
 										<div>
 											<Button
-												text="Shop By Category"
 												bgColor="bg-primary"
+												text="Shop By Category"
 												textColor="text-white"
 											/>
 										</div>
@@ -76,9 +76,9 @@ export const Hero = () => {
 									<div className="order-1 sm:order-2">
 										<div>
 											<img
-												src={slide.img}
 												alt=""
 												className="relative z-40 mx-auto size-75 object-contain drop-shadow-[-8px_4px_6px_rgba(0,0,0,.4)] sm:size-112.5 sm:scale-105 lg:scale-110"
+												src={slide.img}
 											/>
 										</div>
 									</div>

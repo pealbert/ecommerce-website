@@ -52,8 +52,8 @@ export const Navbar = () => {
 					{/* Logo and Links section */}
 					<div className="flex items-center gap-4">
 						<a
-							href="/"
 							className="font-semibold text-2xl text-primary uppercase tracking-widest sm:text-3xl"
+							href="/"
 						>
 							Eshop
 						</a>
@@ -64,8 +64,8 @@ export const Navbar = () => {
 								{MenuLinks.map((link) => (
 									<li key={link.id}>
 										<a
-											href={link.href}
 											className="inline-block px-4 font-semibold text-gray-500 duration-200 hover:text-black dark:hover:text-white"
+											href={link.href}
 										>
 											{link.name}
 										</a>
@@ -75,8 +75,8 @@ export const Navbar = () => {
 								{/* Dropdown */}
 								<li className="group relative cursor-pointer">
 									<button
-										type="button"
 										className="flex items-center gap-0.5 py-2 font-semibold text-gray-500 dark:hover:text-white"
+										type="button"
 									>
 										Quick Links
 										<span>
@@ -90,8 +90,8 @@ export const Navbar = () => {
 											{DropdownLinks.map((link) => (
 												<li key={link.id}>
 													<a
-														href={link.href}
 														className="inline-block w-full rounded-md p-2 font-semibold text-gray-500 duration-200 hover:bg-primary/20 dark:hover:text-white"
+														href={link.href}
 													>
 														{link.name}
 													</a>
@@ -108,12 +108,12 @@ export const Navbar = () => {
 					<div className="flex items-center justify-between gap-4">
 						{/* Search Bar section */}
 						<div className="group relative hidden sm:block">
-							<input type="text" placeholder="Search" className="search-bar" />
+							<input className="search-bar" placeholder="Search" type="text" />
 							<IoMdSearch className="absolute top-1/2 right-3 -translate-y-1/2 text-gray-600 text-xl duration-200 group-hover:text-primary dark:text-gray-400" />
 						</div>
 
 						{/* Order-button section */}
-						<button type="button" className="relative p-3">
+						<button className="relative p-3" type="button">
 							<FaCartShopping className="text-gray-600 text-xl dark:text-gray-400" />
 							<div className="absolute top-0 right-0 flex size-4 items-center justify-center rounded-full bg-red-500 text-white text-xs">
 								4

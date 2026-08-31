@@ -1,18 +1,18 @@
 {
 	"name": "ecommerce-website",
-	"private": true,
 	"version": "0.0.0",
+	"private": true,
 	"type": "module",
 	"scripts": {
-		"dev": "vite",
 		"build": "vite build",
-		"preview": "vite preview",
-		"lint": "biome lint",
-		"format": "biome format",
 		"check": "biome check",
-		"lint:write": "biome lint --write",
+		"check:write": "biome check --write --unsafe",
+		"dev": "vite",
+		"format": "biome format",
 		"format:write": "biome format --write",
-		"check:write": "biome check --write --unsafe"
+		"lint": "biome lint",
+		"lint:write": "biome lint --write",
+		"preview": "vite preview"
 	},
 	"dependencies": {
 		"@tailwindcss/vite": "^4.3.3",

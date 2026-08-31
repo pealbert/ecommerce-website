@@ -18,13 +18,13 @@ export const Category = () => {
 									Earphone
 								</p>
 								<Button
-									text="Browse"
 									bgColor="bg-primary"
+									text="Browse"
 									textColor="text-white"
 								/>
 							</div>
 						</div>
-						<img src={Image1} alt="" className="absolute bottom-0 w-80" />
+						<img alt="" className="absolute bottom-0 w-80" src={Image1} />
 					</div>
 
 					{/* second col */}
@@ -37,16 +37,16 @@ export const Category = () => {
 									Gadget
 								</p>
 								<Button
-									text="Browse"
 									bgColor="bg-white"
+									text="Browse"
 									textColor="text-brand-yellow"
 								/>
 							</div>
 						</div>
 						<img
-							src={Image2}
 							alt=""
 							className="absolute -right-12 w-80 lg:top-10"
+							src={Image2}
 						/>
 					</div>
 
@@ -60,16 +60,16 @@ export const Category = () => {
 									Laptop
 								</p>
 								<Button
-									text="Browse"
 									bgColor="bg-white"
+									text="Browse"
 									textColor="text-primary"
 								/>
 							</div>
 						</div>
 						<img
-							src={Image3}
 							alt=""
 							className="absolute top-1/2 right-0 w-62.5 -translate-y-1/2"
+							src={Image3}
 						/>
 					</div>
 				</div>

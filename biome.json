@@ -35,6 +35,9 @@
 	"css": {
 		"parser": {
 			"tailwindDirectives": true
+		},
+		"formatter": {
+			"enabled": true
 		}
 	},
 	"javascript": {
@@ -46,7 +49,11 @@
 		"enabled": true,
 		"actions": {
 			"source": {
-				"organizeImports": "on"
+				"organizeImports": "on",
+				"noDuplicateClasses": "on",
+				"useSortedProperties": "on",
+				"useSortedAttributes": "on",
+				"useSortedPackageJson": "on"
 			}
 		}
 	}

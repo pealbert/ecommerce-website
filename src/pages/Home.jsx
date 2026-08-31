@@ -4,6 +4,7 @@ import { Category } from "@/components/Category";
 import { Category2 } from "@/components/Category2";
 import { Hero } from "@/components/Hero";
 import { Navbar } from "@/components/Navbar";
+import { Products } from "@/components/Products";
 import { Services } from "@/components/Services";
 
 const Banners = [
@@ -30,6 +31,7 @@ export const Home = () => {
 			<Category2 />
 			<Services />
 			<Banner banner={{ ...Banners[0] }} />
+			<Products />
 		</div>
 	);
 };
