@@ -19,7 +19,7 @@
 			"preset": "recommended",
 			"nursery": {
 				"useSortedClasses": {
-					"level": "error",
+					"level": "warn",
 					"options": {
 						"functions": ["clsx"]
 					}

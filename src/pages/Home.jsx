@@ -1,11 +1,12 @@
+import smartwatch from "@/assets/category/smartwatch.png";
 import headphone from "@/assets/hero/headphone.png";
-import smartwatch from "@/assets/category/smartwatch2-removebg-preview.png";
 import { Banner } from "@/components/Banner";
+import { Blog } from "@/components/Blog";
 import { Category } from "@/components/Category";
-import { Category2 } from "@/components/Category2";
 import { Hero } from "@/components/Hero";
 import { Navbar } from "@/components/Navbar";
 import { Products } from "@/components/Products";
+import { ProgressBar } from "@/components/ProgressBar";
 import { Services } from "@/components/Services";
 
 const Banners = [
@@ -38,6 +39,7 @@ const Banners = [
 export const Home = () => {
 	return (
 		<div className="overflow-hidden bg-white duration-200 dark:bg-gray-900 dark:text-white">
+			<ProgressBar />
 			<Navbar />
 			<Hero />
 			<Category />
@@ -45,6 +47,7 @@ export const Home = () => {
 			<Banner banner={{ ...Banners[0] }} />
 			<Products />
 			<Banner banner={{ ...Banners[1] }} />
+			<Blog />
 		</div>
 	);
 };

@@ -5,7 +5,7 @@ import Img4 from "@/assets/product/p-4.jpg";
 import Img5 from "@/assets/product/p-5.jpg";
 import Img6 from "@/assets/product/p-6.jpg";
 import Img7 from "@/assets/product/p-7.jpg";
-import Heading from "./Heading";
+import { Heading } from "./Heading";
 import { ProductCard } from "./ProductCard";
 
 const ProductsData = [

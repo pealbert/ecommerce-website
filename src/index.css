@@ -9,6 +9,16 @@
 	--color-brand-green: #2dcc6f;
 	--color-brand-blue: #1376f4;
 	--color-brand-white: #eeeeee;
+	--animate-grow-progress: grow-progress linear both;
+
+	@keyframes grow-progress {
+		from {
+			transform: scaleY(0);
+		}
+		to {
+			transform: scaleY(1);
+		}
+	}
 }
 
 @layer base {
@@ -61,4 +71,10 @@
 
 @utility container {
 	@apply w-full mx-auto px-4 sm:px-12;
+}
+
+@utility progress-bar {
+	@apply hidden lg:block z-1000 fixed top-0 right-0 lg:w-1.5 bg-brand-blue h-full origin-top animate-grow-progress;
+
+	animation-timeline: scroll(root block);
 }

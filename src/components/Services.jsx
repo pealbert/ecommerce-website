@@ -35,16 +35,18 @@ const ServicesInfo = [
 export const Services = () => {
 	return (
 		<div>
-			<div className="container my-10">
-				<div className="grid grid-cols-2 gap-x-4 gap-y-8 lg:grid-cols-4">
+			<div className="container my-8">
+				<div className="grid grid-cols-1 gap-x-4 gap-y-12 sm:grid-cols-2 lg:grid-cols-4">
 					{ServicesInfo.map((service) => (
 						<div
-							className="flex flex-col items-start gap-4 sm:flex-row"
+							className="flex flex-col items-center gap-4 sm:flex-row"
 							key={service.id}
 						>
 							{service.icon}
 							<div>
-								<h2 className="font-bold lg:text-xl">{service.title}</h2>
+								<h2 className="text-center font-bold sm:text-left lg:text-xl">
+									{service.title}
+								</h2>
 								<h2 className="text-gray-400 text-sm">{service.description}</h2>
 							</div>
 						</div>

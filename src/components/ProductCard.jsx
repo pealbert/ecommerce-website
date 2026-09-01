@@ -11,7 +11,7 @@ export const ProductCard = ({ product }) => {
 				/>
 
 				{/* Hover Button */}
-				<div className="-translate-1/2 absolute top-1/2 left-1/2 flex size-full items-center justify-center text-center opacity-0 duration-200 group-hover:opacity-100 group-hover:backdrop-blur-sm">
+				<div className="-translate-1/2 absolute top-1/2 left-1/2 flex size-full items-center justify-center rounded-md text-center opacity-0 duration-200 group-hover:opacity-100 group-hover:backdrop-blur-sm">
 					<Button
 						bgColor="bg-primary"
 						text="Add to card"
