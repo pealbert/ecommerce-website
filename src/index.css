@@ -10,6 +10,7 @@
 	--color-brand-blue: #1376f4;
 	--color-brand-white: #eeeeee;
 	--animate-grow-progress: grow-progress linear both;
+	--animate-x-scroll: x-scroll 20s linear infinite;
 
 	@keyframes grow-progress {
 		from {
@@ -17,6 +18,16 @@
 		}
 		to {
 			transform: scaleY(1);
+		}
+	}
+
+	@keyframes x-scroll {
+		from {
+			transform: translateX(0);
+		}
+
+		to {
+			transform: translateX(-50%);
 		}
 	}
 }

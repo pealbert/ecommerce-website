@@ -5,6 +5,7 @@ import { Blog } from "@/components/Blog";
 import { Category } from "@/components/Category";
 import { Hero } from "@/components/Hero";
 import { Navbar } from "@/components/Navbar";
+import { Partners } from "@/components/Partners";
 import { Products } from "@/components/Products";
 import { ProgressBar } from "@/components/ProgressBar";
 import { Services } from "@/components/Services";
@@ -48,6 +49,7 @@ export const Home = () => {
 			<Products />
 			<Banner banner={{ ...Banners[1] }} />
 			<Blog />
+			<Partners />
 		</div>
 	);
 };
