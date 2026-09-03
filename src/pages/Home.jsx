@@ -3,6 +3,7 @@ import headphone from "@/assets/hero/headphone.png";
 import { Banner } from "@/components/Banner";
 import { Blog } from "@/components/Blog";
 import { Category } from "@/components/Category";
+import { Footer } from "@/components/Footer";
 import { Hero } from "@/components/Hero";
 import { Navbar } from "@/components/Navbar";
 import { Partners } from "@/components/Partners";
@@ -50,6 +51,7 @@ export const Home = () => {
 			<Banner banner={{ ...Banners[1] }} />
 			<Blog />
 			<Partners />
+			<Footer />
 		</div>
 	);
 };

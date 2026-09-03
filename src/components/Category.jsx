@@ -12,7 +12,7 @@ export const Category = () => {
 			<div className="container">
 				<div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-4">
 					{/* first col */}
-					<div className="relative col-span-2 flex h-80 items-end rounded-3xl bg-linear-to-br from-black/90 to-black/70 py-10 pl-5 text-white sm:col-span-1 dark:from-gray-800 dark:to-gray-800/70">
+					<div className="group relative col-span-2 flex h-80 items-end overflow-hidden rounded-3xl bg-linear-to-br from-black/90 to-black/70 py-10 pl-5 text-white sm:col-span-1 dark:from-gray-800 dark:to-gray-800/70">
 						<div>
 							<div className="mb-4">
 								<p className="mb-0.5 text-gray-400">Enjoy</p>
@@ -29,13 +29,13 @@ export const Category = () => {
 						</div>
 						<img
 							alt=""
-							className="absolute right-0 bottom-0 w-80 lg:-right-6"
+							className="absolute right-0 bottom-0 w-80 duration-300 group-hover:scale-110 lg:-right-6"
 							src={Image1}
 						/>
 					</div>
 
 					{/* second col */}
-					<div className="relative col-span-2 flex h-80 items-end rounded-3xl bg-linear-to-br from-brand-yellow to-brand-yellow/70 py-10 pl-5 text-white sm:col-span-1">
+					<div className="group relative col-span-2 flex h-80 items-end overflow-hidden rounded-3xl bg-linear-to-br from-brand-yellow to-brand-yellow/70 py-10 pl-5 text-white sm:col-span-1">
 						<div>
 							<div className="mb-4">
 								<p className="mb-0.5 text-white">Enjoy</p>
@@ -52,13 +52,13 @@ export const Category = () => {
 						</div>
 						<img
 							alt=""
-							className="absolute -right-16 w-80 sm:bottom-20 lg:-right-12"
+							className="absolute -right-16 w-80 duration-300 group-hover:scale-110 sm:bottom-20 lg:-right-12"
 							src={Image2}
 						/>
 					</div>
 
 					{/* third col */}
-					<div className="relative col-span-2 flex h-80 items-end rounded-3xl bg-linear-to-br from-primary to-primary/70 py-10 pl-5 text-white">
+					<div className="group relative col-span-2 flex h-80 items-end overflow-hidden rounded-3xl bg-linear-to-br from-primary to-primary/70 py-10 pl-5 text-white">
 						<div>
 							<div className="mb-4 space-y-2">
 								<p className="mb-0.5 text-white">Enjoy</p>
@@ -75,13 +75,13 @@ export const Category = () => {
 						</div>
 						<img
 							alt=""
-							className="absolute top-1/2 right-0 w-50 -translate-y-1/2 sm:w-62.5"
+							className="absolute top-1/2 right-0 w-50 -translate-y-1/2 duration-300 group-hover:scale-110 sm:w-62.5"
 							src={Image3}
 						/>
 					</div>
 
 					{/* fourth col */}
-					<div className="relative col-span-2 flex h-80 items-end rounded-3xl bg-linear-to-br from-gray-400/90 to-gray-100 py-10 pl-5 text-white">
+					<div className="group relative col-span-2 flex h-80 items-end overflow-hidden rounded-3xl bg-linear-to-br from-gray-400/90 to-gray-100 py-10 pl-5 text-white">
 						<div>
 							<div className="mb-4 space-y-2">
 								<p className="mb-0.5 text-white">Enjoy</p>
@@ -98,13 +98,13 @@ export const Category = () => {
 						</div>
 						<img
 							alt=""
-							className="absolute top-1/2 right-2 w-50 -translate-y-1/2 sm:w-62.5"
+							className="absolute top-1/2 right-2 w-50 -translate-y-1/2 duration-300 group-hover:scale-110 sm:w-62.5"
 							src={Image4}
 						/>
 					</div>
 
 					{/* fifth col */}
-					<div className="relative col-span-2 flex h-80 items-end rounded-3xl bg-linear-to-br from-brand-green to-brand-green/70 py-10 pl-5 text-white sm:col-span-1 sm:items-start">
+					<div className="group relative col-span-2 flex h-80 items-end overflow-hidden rounded-3xl bg-linear-to-br from-brand-green to-brand-green/70 py-10 pl-5 text-white sm:col-span-1 sm:items-start">
 						<div>
 							<div className="mb-4">
 								<p className="mb-0.5 text-white">Enjoy</p>
@@ -121,13 +121,13 @@ export const Category = () => {
 						</div>
 						<img
 							alt=""
-							className="absolute right-0 -bottom-3 w-60 sm:right-0 sm:-bottom-4 xl:right-1/2 xl:translate-x-1/2"
+							className="absolute right-0 -bottom-3 w-60 duration-300 group-hover:scale-110 sm:right-0 sm:-bottom-4 xl:right-1/2 xl:translate-x-1/2"
 							src={Image5}
 						/>
 					</div>
 
 					{/* sixth col */}
-					<div className="relative col-span-2 flex h-80 items-end rounded-3xl bg-linear-to-br from-brand-blue to-brand-blue/70 py-10 pl-5 text-white sm:col-span-1 sm:items-start">
+					<div className="group relative col-span-2 flex h-80 items-end overflow-hidden rounded-3xl bg-linear-to-br from-brand-blue to-brand-blue/70 py-10 pl-5 text-white sm:col-span-1 sm:items-start">
 						<div>
 							<div className="mb-4">
 								<p className="mb-0.5 text-white">Enjoy</p>
@@ -144,7 +144,7 @@ export const Category = () => {
 						</div>
 						<img
 							alt=""
-							className="absolute right-0 bottom-0 w-60 lg:w-40 xl:w-50"
+							className="absolute right-0 bottom-0 w-60 duration-300 group-hover:scale-110 lg:w-40 xl:w-50"
 							src={Image6}
 						/>
 					</div>

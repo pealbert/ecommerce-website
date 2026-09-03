@@ -4,7 +4,7 @@ import { Button } from "./Button";
 export const Banner = ({ banner }) => {
 	return (
 		<div className="flex min-h-110 items-center justify-center">
-			<div className="container">
+			<div className="group container">
 				<div
 					className={cn(
 						"grid grid-cols-1 items-center gap-6 rounded-3xl text-white md:grid-cols-3",
@@ -24,7 +24,7 @@ export const Banner = ({ banner }) => {
 					<div className="flex h-full items-center">
 						<img
 							alt=""
-							className="mx-auto w-62.5 scale-125 object-cover drop-shadow-2xl md:w-85"
+							className="mx-auto w-62.5 scale-125 object-cover drop-shadow-2xl duration-300 group-hover:scale-130 md:w-85"
 							src={banner.image}
 						/>
 					</div>
