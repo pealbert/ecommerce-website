@@ -7,22 +7,22 @@ const MenuLinks = [
 	{
 		id: 1,
 		name: "Home",
-		href: "#",
+		href: "/",
 	},
 	{
 		id: 2,
 		name: "Shop",
-		href: "#shop",
+		href: "/",
 	},
 	{
 		id: 3,
 		name: "About",
-		href: "#about",
+		href: "/",
 	},
 	{
 		id: 4,
 		name: "Blogs",
-		href: "#blog",
+		href: "/",
 	},
 ];
 
@@ -30,21 +30,21 @@ const DropdownLinks = [
 	{
 		id: 1,
 		name: "Trending Products",
-		href: "#",
+		href: "/",
 	},
 	{
 		id: 2,
 		name: "Best Selling",
-		href: "#",
+		href: "/",
 	},
 	{
 		id: 3,
 		name: "Top Rated",
-		href: "#",
+		href: "/",
 	},
 ];
 
-export const Navbar = () => {
+export const Navbar = ({ handler }) => {
 	return (
 		<div className="relative z-40 bg-white duration-200 dark:bg-gray-900 dark:text-white">
 			<div className="py-4">
@@ -113,7 +113,11 @@ export const Navbar = () => {
 						</div>
 
 						{/* Order-button section */}
-						<button className="relative p-3" type="button">
+						<button
+							className="relative cursor-pointer p-3"
+							onClick={handler}
+							type="button"
+						>
 							<FaCartShopping className="text-gray-600 text-xl dark:text-gray-400" />
 							<div className="absolute top-0 right-0 flex size-4 items-center justify-center rounded-full bg-red-500 text-white text-xs">
 								4

@@ -10,7 +10,8 @@
 	--color-brand-blue: #1376f4;
 	--color-brand-white: #eeeeee;
 	--animate-grow-progress: grow-progress linear both;
-	--animate-x-scroll: x-scroll 20s linear infinite;
+	--animate-x-scroll-to-right: x-scroll-to-right 20s linear infinite;
+	--animate-x-scroll-to-left: x-scroll-to-left 20s linear infinite;
 
 	@keyframes grow-progress {
 		from {
@@ -21,13 +22,23 @@
 		}
 	}
 
-	@keyframes x-scroll {
+	@keyframes x-scroll-to-right {
 		from {
 			transform: translateX(0);
 		}
 
 		to {
 			transform: translateX(-50%);
+		}
+	}
+
+	@keyframes x-scroll-to-left {
+		from {
+			transform: translateX(-50%);
+		}
+
+		to {
+			transform: translateX(0);
 		}
 	}
 }
@@ -77,6 +88,10 @@
 @layer utilities {
 	.hero-bg-color {
 		@apply bg-linear-to-r from-gray-300/80 to-gray-100 dark:from-gray-900 dark:to-gray-800 dark:text-white;
+	}
+
+	.form-input {
+		@apply w-full rounded-full border border-gray-300 dark:border-gray-600 dark:bg-gray-800 dark:text-white my-3 px-3 py-2 focus:outline-none;
 	}
 }
 

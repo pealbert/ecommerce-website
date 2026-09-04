@@ -1,7 +1,6 @@
 import { cn } from "@/lib/utils";
 
-// handler = () => {}
-export const Button = ({ text, bgColor, textColor }) => {
+export const Button = ({ text, bgColor, textColor, handler = () => {} }) => {
 	return (
 		<button
 			className={cn(
@@ -9,6 +8,7 @@ export const Button = ({ text, bgColor, textColor }) => {
 				bgColor,
 				textColor,
 			)}
+			onClick={handler}
 			type="button"
 		>
 			{text}

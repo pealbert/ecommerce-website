@@ -28,7 +28,7 @@ const HeroSlide = [
 	},
 ];
 
-export const Hero = () => {
+export const Hero = ({ handler }) => {
 	const Slider = ReactSlick.default ?? ReactSlick;
 
 	const settings = {
@@ -47,7 +47,7 @@ export const Hero = () => {
 
 	return (
 		<div className="container pt-5">
-			<div className="hero-bg-color flex min-h-137.5 items-center justify-center overflow-hidden rounded-3xl sm:min-h-162.5">
+			<div className="hero-bg-color flex min-h-137.5 items-center justify-center rounded-3xl sm:min-h-162.5">
 				<div className="container pb-8 sm:pb-0">
 					{/* Hero section */}
 					<Slider {...settings}>
@@ -66,6 +66,7 @@ export const Hero = () => {
 										<div>
 											<Button
 												bgColor="bg-primary"
+												handler={handler}
 												text="Shop By Category"
 												textColor="text-white"
 											/>

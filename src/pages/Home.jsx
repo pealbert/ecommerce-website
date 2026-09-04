@@ -1,3 +1,4 @@
+import { useState } from "react";
 import smartwatch from "@/assets/category/smartwatch.png";
 import headphone from "@/assets/hero/headphone.png";
 import { Banner } from "@/components/Banner";
@@ -7,6 +8,7 @@ import { Footer } from "@/components/Footer";
 import { Hero } from "@/components/Hero";
 import { Navbar } from "@/components/Navbar";
 import { Partners } from "@/components/Partners";
+import { Popup } from "@/components/Popup";
 import { Products } from "@/components/Products";
 import { ProgressBar } from "@/components/ProgressBar";
 import { Services } from "@/components/Services";
@@ -39,19 +41,28 @@ const Banners = [
 ];
 
 export const Home = () => {
+	const [orderPopup, setOrderPopup] = useState(false);
+
+	const handleOrderPopup = () => {
+		setOrderPopup(!orderPopup);
+	};
+
 	return (
 		<div className="overflow-hidden bg-white duration-200 dark:bg-gray-900 dark:text-white">
 			<ProgressBar />
-			<Navbar />
-			<Hero />
+			<Navbar handler={handleOrderPopup} />
+			<Hero handler={handleOrderPopup} />
 			<Category />
 			<Services />
 			<Banner banner={{ ...Banners[0] }} />
 			<Products />
 			<Banner banner={{ ...Banners[1] }} />
 			<Blog />
-			<Partners />
+			<Partners animation="animate-x-scroll-to-right" />
+			<Partners animation="animate-x-scroll-to-left" />
 			<Footer />
+
+			<Popup handleOrderPopup={handleOrderPopup} orderPopup={orderPopup} />
 		</div>
 	);
 };
