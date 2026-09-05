@@ -46,7 +46,7 @@ export const Hero = ({ handler }) => {
 	};
 
 	return (
-		<div className="container pt-5">
+		<div className="container pt-5" id="hero">
 			<div className="hero-bg-color flex min-h-137.5 items-center justify-center rounded-3xl sm:min-h-162.5">
 				<div className="container pb-8 sm:pb-0">
 					{/* Hero section */}
@@ -56,14 +56,38 @@ export const Hero = ({ handler }) => {
 								<div className="grid grid-cols-1 overflow-hidden sm:grid-cols-2">
 									{/* Text content section */}
 									<div className="relative z-10 order-2 flex flex-col justify-center gap-4 pt-12 text-center sm:order-1 sm:pt-0 sm:pl-3 sm:text-left">
-										<h3 className="font-bold text-2xl">{slide.subtitle}</h3>
-										<h2 className="font-bold text-5xl sm:text-6xl lg:text-7xl">
+										<h3
+											className="font-bold text-2xl"
+											data-aos="zoom-out"
+											data-aos-duration="300"
+											data-aos-once="true"
+										>
+											{slide.subtitle}
+										</h3>
+										<h2
+											className="font-bold text-5xl sm:text-6xl lg:text-7xl"
+											data-aos="zoom-out"
+											data-aos-delay="100"
+											data-aos-duration="300"
+											data-aos-once="true"
+										>
 											{slide.title}
 										</h2>
-										<h1 className="font-bold text-5xl text-white uppercase sm:text-[80px] md:text-[100px] xl:text-[150px] dark:text-white/15">
+										<h1
+											className="font-bold text-5xl text-white uppercase sm:text-[80px] md:text-[100px] xl:text-[150px] dark:text-white/15"
+											data-aos="zoom-out"
+											data-aos-delay="200"
+											data-aos-duration="300"
+											data-aos-once="true"
+										>
 											{slide.title2}
 										</h1>
-										<div>
+										<div
+											data-aos="fade-up"
+											data-aos-delay="300"
+											data-aos-duration="300"
+											data-aos-offset="0"
+										>
 											<Button
 												bgColor="bg-primary"
 												handler={handler}
@@ -75,7 +99,13 @@ export const Hero = ({ handler }) => {
 
 									{/* Img section */}
 									<div className="order-1 sm:order-2">
-										<div>
+										<div
+											className="relative z-10"
+											data-aos="zoom-in"
+											data-aos-delay="400"
+											data-aos-duration="300"
+											data-aos-once="true"
+										>
 											<img
 												alt=""
 												className="relative z-40 mx-auto size-75 object-contain drop-shadow-[-8px_4px_6px_rgba(0,0,0,.4)] sm:size-112.5 sm:scale-105 lg:scale-110"

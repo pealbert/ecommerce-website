@@ -12,6 +12,7 @@ const Blogs = [
 			"Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti rerum, ullam ipsa laudantium odio incidunt.",
 		published: "Jan 20, 2024 by Dilshad",
 		image: Img1,
+		aosDelay: 0,
 	},
 	{
 		id: 2,
@@ -20,6 +21,7 @@ const Blogs = [
 			"Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti rerum, ullam ipsa laudantium odio incidunt.",
 		published: "Jan 20, 2024 by Satya",
 		image: Img2,
+		aosDelay: 100,
 	},
 	{
 		id: 3,
@@ -28,12 +30,13 @@ const Blogs = [
 			"Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti rerum, ullam ipsa laudantium odio incidunt.",
 		published: "Jan 20, 2024 by Sabir",
 		image: Img3,
+		aosDelay: 200,
 	},
 ];
 
 export const Blog = () => {
 	return (
-		<div className="my-12">
+		<div className="my-12" id="blog">
 			<div className="container">
 				{/* Header section */}
 				<Heading subtitle="Explore Our Blogs" title="Recent News" />

@@ -2,7 +2,7 @@ import { Button } from "./Button";
 
 export const ProductCard = ({ product }) => {
 	return (
-		<div className="group">
+		<div className="group" data-aos="fade-up" data-aos-delay={product.aosDelay}>
 			<div className="relative space-y-3">
 				<img
 					alt=""

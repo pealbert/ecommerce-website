@@ -21,21 +21,21 @@ const ProductsData = [
 		img: Img2,
 		title: "Rocky Mountain",
 		price: "420",
-		aosDelay: "200",
+		aosDelay: "100",
 	},
 	{
 		id: 3,
 		img: Img3,
 		title: "Goggles",
 		price: "320",
-		aosDelay: "400",
+		aosDelay: "200",
 	},
 	{
 		id: 4,
 		img: Img4,
 		title: "Printed",
 		price: "220",
-		aosDelay: "600",
+		aosDelay: "300",
 	},
 	{
 		id: 5,
@@ -49,28 +49,28 @@ const ProductsData = [
 		img: Img6,
 		title: "Rocky Mountain",
 		price: "420",
-		aosDelay: "200",
+		aosDelay: "100",
 	},
 	{
 		id: 7,
 		img: Img7,
 		title: "Goggles",
 		price: "320",
-		aosDelay: "400",
+		aosDelay: "200",
 	},
 	{
 		id: 8,
 		img: Img2,
 		title: "Printed",
 		price: "220",
-		aosDelay: "600",
+		aosDelay: "300",
 	},
 ];
 
 export const Products = () => {
 	return (
 		<div>
-			<div className="container">
+			<div className="container" id="products">
 				{/* Header section */}
 				<Heading subtitle="Explore Our Products" title="Our Products" />
 

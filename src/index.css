@@ -51,8 +51,9 @@
 	html {
 		-webkit-text-size-adjust: 100%;
 		text-size-adjust: 100%;
+		
 
-		@apply scroll-smooth;
+		@apply scroll-smooth scroll-pt-25;
 
 		&::-webkit-scrollbar {
 			@apply hidden;

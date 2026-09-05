@@ -7,22 +7,22 @@ const MenuLinks = [
 	{
 		id: 1,
 		name: "Home",
-		href: "/",
+		href: "#hero",
 	},
 	{
 		id: 2,
 		name: "Shop",
-		href: "/",
+		href: "#products",
 	},
 	{
 		id: 3,
 		name: "About",
-		href: "/",
+		href: "#services",
 	},
 	{
 		id: 4,
 		name: "Blogs",
-		href: "/",
+		href: "#blog",
 	},
 ];
 
@@ -46,7 +46,7 @@ const DropdownLinks = [
 
 export const Navbar = ({ handler }) => {
 	return (
-		<div className="relative z-40 bg-white duration-200 dark:bg-gray-900 dark:text-white">
+		<div className="sticky top-0 z-40 bg-white/50 duration-200 dark:bg-gray-900/50 dark:text-white backdrop-blur-sm">
 			<div className="py-4">
 				<div className="container flex items-center justify-between">
 					{/* Logo and Links section */}

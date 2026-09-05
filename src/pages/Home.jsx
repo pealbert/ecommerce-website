@@ -1,4 +1,7 @@
-import { useState } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
+
+import { useEffect, useState } from "react";
 import smartwatch from "@/assets/category/smartwatch.png";
 import headphone from "@/assets/hero/headphone.png";
 import { Banner } from "@/components/Banner";
@@ -47,8 +50,19 @@ export const Home = () => {
 		setOrderPopup(!orderPopup);
 	};
 
+	useEffect(() => {
+		AOS.init({
+			duration: 800,
+			easing: "ease-in-sine",
+			delay: 100,
+			offset: 100,
+		});
+
+		AOS.refresh();
+	}, []);
+
 	return (
-		<div className="overflow-hidden bg-white duration-200 dark:bg-gray-900 dark:text-white">
+		<div className="bg-white duration-200 dark:bg-gray-900 dark:text-white">
 			<ProgressBar />
 			<Navbar handler={handleOrderPopup} />
 			<Hero handler={handleOrderPopup} />

@@ -102,7 +102,7 @@ export const Footer = () => {
 								{/* social links */}
 								<div className="mt-6 flex items-center gap-3">
 									<a
-										href="https://github.com/pealbert/"
+										href="https://github.com/pealbert/ecommerce-website"
 										rel="noopener noreferrer"
 										target="_blank"
 									>

@@ -12,7 +12,11 @@ export const Category = () => {
 			<div className="container">
 				<div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-4">
 					{/* first col */}
-					<div className="group relative col-span-2 flex h-80 items-end overflow-hidden rounded-3xl bg-linear-to-br from-black/90 to-black/70 py-10 pl-5 text-white sm:col-span-1 dark:from-gray-800 dark:to-gray-800/70">
+					<div
+						className="group relative col-span-2 flex h-80 items-end overflow-hidden rounded-3xl bg-linear-to-br from-black/90 to-black/70 py-10 pl-5 text-white sm:col-span-1 dark:from-gray-800 dark:to-gray-800/70"
+						data-aos="fade"
+						data-aos-duration="300"
+					>
 						<div>
 							<div className="mb-4">
 								<p className="mb-0.5 text-gray-400">Enjoy</p>
@@ -35,7 +39,12 @@ export const Category = () => {
 					</div>
 
 					{/* second col */}
-					<div className="group relative col-span-2 flex h-80 items-end overflow-hidden rounded-3xl bg-linear-to-br from-brand-yellow to-brand-yellow/70 py-10 pl-5 text-white sm:col-span-1">
+					<div
+						className="group relative col-span-2 flex h-80 items-end overflow-hidden rounded-3xl bg-linear-to-br from-brand-yellow to-brand-yellow/70 py-10 pl-5 text-white sm:col-span-1"
+						data-aos="fade"
+						data-aos-delay="100"
+						data-aos-duration="300"
+					>
 						<div>
 							<div className="mb-4">
 								<p className="mb-0.5 text-white">Enjoy</p>
@@ -58,7 +67,12 @@ export const Category = () => {
 					</div>
 
 					{/* third col */}
-					<div className="group relative col-span-2 flex h-80 items-end overflow-hidden rounded-3xl bg-linear-to-br from-primary to-primary/70 py-10 pl-5 text-white">
+					<div
+						className="group relative col-span-2 flex h-80 items-end overflow-hidden rounded-3xl bg-linear-to-br from-primary to-primary/70 py-10 pl-5 text-white"
+						data-aos="fade"
+						data-aos-delay="200"
+						data-aos-duration="300"
+					>
 						<div>
 							<div className="mb-4 space-y-2">
 								<p className="mb-0.5 text-white">Enjoy</p>
@@ -81,7 +95,12 @@ export const Category = () => {
 					</div>
 
 					{/* fourth col */}
-					<div className="group relative col-span-2 flex h-80 items-end overflow-hidden rounded-3xl bg-linear-to-br from-gray-400/90 to-gray-100 py-10 pl-5 text-white">
+					<div
+						className="group relative col-span-2 flex h-80 items-end overflow-hidden rounded-3xl bg-linear-to-br from-gray-400/90 to-gray-100 py-10 pl-5 text-white"
+						data-aos="fade"
+						data-aos-delay="300"
+						data-aos-duration="300"
+					>
 						<div>
 							<div className="mb-4 space-y-2">
 								<p className="mb-0.5 text-white">Enjoy</p>
@@ -104,7 +123,12 @@ export const Category = () => {
 					</div>
 
 					{/* fifth col */}
-					<div className="group relative col-span-2 flex h-80 items-end overflow-hidden rounded-3xl bg-linear-to-br from-brand-green to-brand-green/70 py-10 pl-5 text-white sm:col-span-1 sm:items-start">
+					<div
+						className="group relative col-span-2 flex h-80 items-end overflow-hidden rounded-3xl bg-linear-to-br from-brand-green to-brand-green/70 py-10 pl-5 text-white sm:col-span-1 sm:items-start"
+						data-aos="fade"
+						data-aos-delay="400"
+						data-aos-duration="300"
+					>
 						<div>
 							<div className="mb-4">
 								<p className="mb-0.5 text-white">Enjoy</p>
@@ -127,7 +151,12 @@ export const Category = () => {
 					</div>
 
 					{/* sixth col */}
-					<div className="group relative col-span-2 flex h-80 items-end overflow-hidden rounded-3xl bg-linear-to-br from-brand-blue to-brand-blue/70 py-10 pl-5 text-white sm:col-span-1 sm:items-start">
+					<div
+						className="group relative col-span-2 flex h-80 items-end overflow-hidden rounded-3xl bg-linear-to-br from-brand-blue to-brand-blue/70 py-10 pl-5 text-white sm:col-span-1 sm:items-start"
+						data-aos="fade"
+						data-aos-delay="500"
+						data-aos-duration="300"
+					>
 						<div>
 							<div className="mb-4">
 								<p className="mb-0.5 text-white">Enjoy</p>

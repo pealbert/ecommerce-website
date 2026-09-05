@@ -1,6 +1,10 @@
 export const BlogCard = ({ blog }) => {
 	return (
-		<div className="bg-white dark:bg-gray-900">
+		<div
+			className="bg-white dark:bg-gray-900"
+			data-aos="fade-up"
+			data-aos-delay={blog.aosDelay}
+		>
 			{/* Image section */}
 			<div className="mb-2 overflow-hidden rounded-2xl">
 				<img
