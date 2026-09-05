@@ -46,7 +46,7 @@ const DropdownLinks = [
 
 export const Navbar = ({ handler }) => {
 	return (
-		<div className="sticky top-0 z-40 bg-white/50 duration-200 dark:bg-gray-900/50 dark:text-white backdrop-blur-sm">
+		<div className="sticky top-0 z-40 bg-white/50 backdrop-blur-sm duration-200 dark:bg-gray-900/50 dark:text-white">
 			<div className="py-4">
 				<div className="container flex items-center justify-between">
 					{/* Logo and Links section */}
