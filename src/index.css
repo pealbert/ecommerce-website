@@ -9,8 +9,98 @@
 	--color-brand-green: #2dcc6f;
 	--color-brand-blue: #1376f4;
 	--color-brand-white: #eeeeee;
+	--animate-grow-progress: grow-progress linear both;
+	--animate-x-scroll-to-right: x-scroll-to-right 20s linear infinite;
+	--animate-x-scroll-to-left: x-scroll-to-left 20s linear infinite;
+
+	@keyframes grow-progress {
+		from {
+			transform: scaleY(0);
+		}
+		to {
+			transform: scaleY(1);
+		}
+	}
+
+	@keyframes x-scroll-to-right {
+		from {
+			transform: translateX(0);
+		}
+
+		to {
+			transform: translateX(-50%);
+		}
+	}
+
+	@keyframes x-scroll-to-left {
+		from {
+			transform: translateX(-50%);
+		}
+
+		to {
+			transform: translateX(0);
+		}
+	}
+}
+
+@layer base {
+	* {
+		-webkit-tap-highlight-color: transparent;
+	}
+
+	html {
+		-webkit-text-size-adjust: 100%;
+		text-size-adjust: 100%;
+
+		@apply scroll-smooth scroll-pt-25;
+
+		&::-webkit-scrollbar {
+			@apply hidden;
+		}
+	}
+
+	body {
+		font-feature-settings:
+			"rlig" 1,
+			"calt" 1;
+	}
+
+	::selection {
+		@apply bg-brand-blue text-brand-white;
+	}
+
+	:focus:not(:focus-visible) {
+		@apply outline-none;
+	}
+
+	:focus-visible {
+		outline: 2px solid currentColor;
+		outline-offset: 2px;
+	}
+}
+
+@layer components {
+	.search-bar {
+		@apply w-0 group-hover:w-75 transition-all duration-300 rounded-full group-hover:border group-hover:border-gray-500 px-3 py-1 focus:outline-none dark:border-gray-800 dark:bg-gray-900 group-hover:dark:bg-gray-800;
+	}
+}
+
+@layer utilities {
+	.hero-bg-color {
+		@apply bg-linear-to-r from-gray-300/80 to-gray-100 dark:from-gray-900 dark:to-gray-800 dark:text-white;
+	}
+
+	.form-input {
+		@apply w-full rounded-full border border-gray-300 dark:border-gray-600 dark:bg-gray-800 dark:text-white my-3 px-3 py-2 focus:outline-none;
+	}
 }
 
 @utility container {
-	@apply w-full mx-auto px-4 sm:px-12
+	@apply w-full mx-auto px-4 sm:px-12;
+}
+
+@utility progress-bar {
+	@apply hidden lg:block z-1000 fixed top-0 right-0 lg:w-1.5 bg-brand-blue h-full origin-top animate-grow-progress;
+
+	animation-timeline: scroll(root block);
 }
