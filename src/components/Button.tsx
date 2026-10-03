@@ -1,6 +1,7 @@
 import { cn } from "@/lib/utils";
+import type { ButtonProps } from "@/types";
 
-export const Button = ({ text, bgColor, textColor, handler = () => {} }) => {
+export const Button = ({ text, bgColor, textColor, handler }: ButtonProps) => {
 	return (
 		<button
 			className={cn(

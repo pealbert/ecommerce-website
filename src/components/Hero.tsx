@@ -2,9 +2,16 @@ import ReactSlick from "react-slick";
 import Image3 from "@/assets/category/macbook.png";
 import Image2 from "@/assets/category/vr.png";
 import Image1 from "@/assets/hero/headphone.png";
+import type { HeroSlideData, OrderHandlerProps, SlickModule } from "@/types";
 import { Button } from "./Button";
 
-const HeroSlide = [
+const sliderModule = ReactSlick as SlickModule;
+const Slider =
+	typeof sliderModule === "object" && "default" in sliderModule
+		? sliderModule.default
+		: sliderModule;
+
+const HeroSlide: HeroSlideData[] = [
 	{
 		id: 1,
 		img: Image1,
@@ -28,9 +35,7 @@ const HeroSlide = [
 	},
 ];
 
-export const Hero = ({ handler }) => {
-	const Slider = ReactSlick.default ?? ReactSlick;
-
+export const Hero = ({ handler }: OrderHandlerProps) => {
 	const settings = {
 		dots: false,
 		arrows: false,

@@ -15,6 +15,7 @@ import { Popup } from "@/components/Popup";
 import { Products } from "@/components/Products";
 import { ProgressBar } from "@/components/ProgressBar";
 import { Services } from "@/components/Services";
+import type { BannerData } from "@/types";
 
 const Banners = [
 	{
@@ -41,7 +42,7 @@ const Banners = [
 		bgColor: "bg-brand-green",
 		buttonTextColor: "text-brand-green",
 	},
-];
+] satisfies readonly [BannerData, BannerData];
 
 export const Home = () => {
 	const [orderPopup, setOrderPopup] = useState(false);

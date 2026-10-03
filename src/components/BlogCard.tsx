@@ -1,4 +1,6 @@
-export const BlogCard = ({ blog }) => {
+import type { BlogCardProps } from "@/types";
+
+export const BlogCard = ({ blog }: BlogCardProps) => {
 	return (
 		<div
 			className="bg-white dark:bg-gray-900"

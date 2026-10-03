@@ -1,7 +1,8 @@
 import { cn } from "@/lib/utils";
+import type { BannerProps } from "@/types";
 import { Button } from "./Button";
 
-export const Banner = ({ banner }) => {
+export const Banner = ({ banner }: BannerProps) => {
 	return (
 		<div className="flex min-h-110 items-center justify-center">
 			<div className="group container">

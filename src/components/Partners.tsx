@@ -4,8 +4,9 @@ import brand3 from "@/assets/brand/br-3.png";
 import brand4 from "@/assets/brand/br-4.png";
 import brand5 from "@/assets/brand/br-5.png";
 import { cn } from "@/lib/utils";
+import type { PartnersProps } from "@/types";
 
-export const Partners = ({ animation }) => {
+export const Partners = ({ animation }: PartnersProps) => {
 	return (
 		<div className="-mb-px hidden overflow-hidden bg-gray-200 py-8 md:block dark:bg-white/10">
 			<div className={cn("flex w-max", animation)}>

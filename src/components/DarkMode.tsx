@@ -2,27 +2,27 @@ import { useEffect, useState } from "react";
 import DarkButton from "@/assets/website/dark-mode-button.png";
 import LightButton from "@/assets/website/light-mode-button.png";
 import { cn } from "@/lib/utils";
+import type { Theme } from "@/types";
 
 export const DarkMode = () => {
-	const [theme, setTheme] = useState(
-		localStorage.getItem("theme") ? localStorage.getItem("theme") : "light",
+	const [theme, setTheme] = useState<Theme>(() =>
+		localStorage.getItem("theme") === "dark" ? "dark" : "light",
 	);
 
 	const toggleTheme = () => {
 		setTheme((currentTheme) => (currentTheme === "dark" ? "light" : "dark"));
 	};
 
-	const element = document.documentElement; // access to html element
-
 	// set theme to localStorage and html element
 	useEffect(() => {
 		localStorage.setItem("theme", theme);
+		const element = document.documentElement;
 		if (theme === "dark") {
 			element.classList.add("dark");
 		} else {
 			element.classList.remove("dark");
 		}
-	});
+	}, [theme]);
 
 	return (
 		<button

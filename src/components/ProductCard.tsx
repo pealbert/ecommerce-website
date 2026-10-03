@@ -1,6 +1,7 @@
+import type { ProductCardProps } from "@/types";
 import { Button } from "./Button";
 
-export const ProductCard = ({ product }) => {
+export const ProductCard = ({ product }: ProductCardProps) => {
 	return (
 		<div className="group" data-aos="fade-up" data-aos-delay={product.aosDelay}>
 			<div className="relative space-y-3">

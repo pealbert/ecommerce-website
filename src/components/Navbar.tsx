@@ -1,9 +1,10 @@
 import { FaCaretDown } from "react-icons/fa";
 import { FaCartShopping } from "react-icons/fa6";
 import { IoMdSearch } from "react-icons/io";
+import type { NavigationLink, OrderHandlerProps } from "@/types";
 import { DarkMode } from "./DarkMode";
 
-const MenuLinks = [
+const MenuLinks: NavigationLink[] = [
 	{
 		id: 1,
 		name: "Home",
@@ -26,7 +27,7 @@ const MenuLinks = [
 	},
 ];
 
-const DropdownLinks = [
+const DropdownLinks: NavigationLink[] = [
 	{
 		id: 1,
 		name: "Trending Products",
@@ -44,7 +45,7 @@ const DropdownLinks = [
 	},
 ];
 
-export const Navbar = ({ handler }) => {
+export const Navbar = ({ handler }: OrderHandlerProps) => {
 	return (
 		<div className="sticky top-0 z-40 bg-white/50 backdrop-blur-sm duration-200 dark:bg-gray-900/50 dark:text-white">
 			<div className="py-4">

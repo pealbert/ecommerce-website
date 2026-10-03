@@ -4,8 +4,9 @@ import {
 	FaHeadphonesAlt,
 	FaWallet,
 } from "react-icons/fa";
+import type { ServiceInfo } from "@/types";
 
-const ServicesInfo = [
+const ServicesInfo: ServiceInfo[] = [
 	{
 		id: 1,
 		icon: <FaCarSide className="text-4xl text-primary md:text-5xl" />,

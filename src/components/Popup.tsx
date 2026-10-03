@@ -1,7 +1,8 @@
 import { IoCloseOutline } from "react-icons/io5";
+import type { PopupProps } from "@/types";
 import { Button } from "./Button";
 
-export const Popup = ({ orderPopup, handleOrderPopup }) => {
+export const Popup = ({ orderPopup, handleOrderPopup }: PopupProps) => {
 	return (
 		<>
 			{orderPopup && (

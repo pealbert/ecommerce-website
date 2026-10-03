@@ -5,10 +5,11 @@ import Img4 from "@/assets/product/p-4.jpg";
 import Img5 from "@/assets/product/p-5.jpg";
 import Img6 from "@/assets/product/p-6.jpg";
 import Img7 from "@/assets/product/p-7.jpg";
+import type { Product } from "@/types";
 import { Heading } from "./Heading";
 import { ProductCard } from "./ProductCard";
 
-const ProductsData = [
+const ProductsData: Product[] = [
 	{
 		id: 1,
 		img: Img1,

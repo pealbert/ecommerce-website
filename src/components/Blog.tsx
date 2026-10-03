@@ -1,10 +1,11 @@
 import Img1 from "@/assets/blogs/blog-1.jpg";
 import Img2 from "@/assets/blogs/blog-2.jpg";
 import Img3 from "@/assets/blogs/blog-3.jpg";
+import type { BlogPost } from "@/types";
 import { BlogCard } from "./BlogCard";
 import { Heading } from "./Heading";
 
-const Blogs = [
+const Blogs: BlogPost[] = [
 	{
 		id: 1,
 		title: "How to choose perfect smartwatch",

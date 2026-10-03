@@ -4,8 +4,9 @@ import {
 	FaLocationArrow,
 	FaMobileAlt,
 } from "react-icons/fa";
+import type { FooterLink } from "@/types";
 
-const FooterLinks = [
+const FooterLinks: FooterLink[] = [
 	{
 		id: 1,
 		title: "Home",
