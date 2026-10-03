@@ -1,1 +1,1 @@
-# Ecommerce Website using ReactJS and TailwindCSS
+# Ecommerce project using ReactJS, TypeScript, TailwindCSS, Vite and Biome
